@@ -1,0 +1,189 @@
+package net.kzeroko.isekaiweaponryfabric.init;
+
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+
+public class IsekaiSounds {
+    // Special ID
+    public static final Identifier CAST_ACTIVATE_REG = registerId("cast_activate");
+    public static final Identifier CAST_REPLENISH_REG = registerId("cast_replenish");
+    public static final Identifier CRESCENTROSE_SHOOT_REG = registerId("crescentrose_shoot");
+    public static final Identifier CRESCENTROSE_CHARGE_REG = registerId("crescentrose_charge");
+    public static final Identifier MAGICAL_HIT_REG = registerId("magical_hit");
+    // Templates ID
+    public static final Identifier WHOOSH_BLAZING1_REG = registerId("whoosh_blazing1");
+    public static final Identifier WHOOSH_BLAZING2_REG = registerId("whoosh_blazing2");
+    public static final Identifier WHOOSH_BLAZING3_REG = registerId("whoosh_blazing3");
+    public static final Identifier WHOOSH_BLAZING4_REG = registerId("whoosh_blazing4");
+    public static final Identifier WHOOSH_BLAZING5_REG = registerId("whoosh_blazing5");
+    public static final Identifier WHOOSH_BLAZING6_REG = registerId("whoosh_blazing6");
+    public static final Identifier WHOOSH_BLAZING7_REG = registerId("whoosh_blazing7");
+    public static final Identifier WHOOSH_BLAZING8_REG = registerId("whoosh_blazing8");
+    public static final Identifier WHOOSH_CHARGE1_REG = registerId("whoosh_charge1");
+    public static final Identifier WHOOSH_CHARGE2_REG = registerId("whoosh_charge2");
+    public static final Identifier WHOOSH_ELECTRIC1_REG = registerId("whoosh_electric1");
+    public static final Identifier WHOOSH_ELECTRIC2_REG = registerId("whoosh_electric2");
+    public static final Identifier WHOOSH_ELECTRIC3_REG = registerId("whoosh_electric3");
+    public static final Identifier WHOOSH_ELECTRIC4_REG = registerId("whoosh_electric4");
+    public static final Identifier WHOOSH_ELECTRIC5_REG = registerId("whoosh_electric5");
+    public static final Identifier WHOOSH_HEAVY1_REG = registerId("whoosh_heavy1");
+    public static final Identifier WHOOSH_HEAVY2_REG = registerId("whoosh_heavy2");
+    public static final Identifier WHOOSH_HEAVY3_REG = registerId("whoosh_heavy3");
+    public static final Identifier WHOOSH_HEAVY4_REG = registerId("whoosh_heavy4");
+    public static final Identifier WHOOSH_HEAVY5_REG = registerId("whoosh_heavy5");
+    public static final Identifier WHOOSH_LIGHT1_REG = registerId("whoosh_light1");
+    public static final Identifier WHOOSH_LIGHT2_REG = registerId("whoosh_light2");
+    public static final Identifier WHOOSH_LIGHT3_REG = registerId("whoosh_light3");
+    public static final Identifier WHOOSH_LIGHT4_REG = registerId("whoosh_light4");
+    public static final Identifier WHOOSH_LONG1_REG = registerId("whoosh_long1");
+    public static final Identifier WHOOSH_LONG2_REG = registerId("whoosh_long2");
+    public static final Identifier WHOOSH_SHARP1_REG = registerId("whoosh_sharp1");
+    public static final Identifier WHOOSH_SHARP2_REG = registerId("whoosh_sharp2");
+    public static final Identifier WHOOSH_SHARP3_REG = registerId("whoosh_sharp3");
+    public static final Identifier WHOOSH_SHARP4_REG = registerId("whoosh_sharp4");
+    public static final Identifier WHOOSH_SIMPLE1_REG = registerId("whoosh_simple1");
+    public static final Identifier WHOOSH_SIMPLE2_REG = registerId("whoosh_simple2");
+    public static final Identifier WHOOSH_SIMPLE3_REG = registerId("whoosh_simple3");
+    public static final Identifier WHOOSH_SIMPLE4_REG = registerId("whoosh_simple4");
+
+    // Special Event
+    public static SoundEvent CAST_ACTIVATE;
+    public static SoundEvent CAST_REPLENISH;
+    public static SoundEvent CRESCENTROSE_SHOOT;
+    public static SoundEvent CRESCENTROSE_CHARGE;
+    public static SoundEvent MAGICAL_HIT;
+    // Template Event
+    public static SoundEvent WHOOSH_BLAZING1;
+    public static SoundEvent WHOOSH_BLAZING2;
+    public static SoundEvent WHOOSH_BLAZING3;
+    public static SoundEvent WHOOSH_BLAZING4;
+    public static SoundEvent WHOOSH_BLAZING5;
+    public static SoundEvent WHOOSH_BLAZING6;
+    public static SoundEvent WHOOSH_BLAZING7;
+    public static SoundEvent WHOOSH_BLAZING8;
+    public static SoundEvent WHOOSH_CHARGE1;
+    public static SoundEvent WHOOSH_CHARGE2;
+    public static SoundEvent WHOOSH_ELECTRIC1;
+    public static SoundEvent WHOOSH_ELECTRIC2;
+    public static SoundEvent WHOOSH_ELECTRIC3;
+    public static SoundEvent WHOOSH_ELECTRIC4;
+    public static SoundEvent WHOOSH_ELECTRIC5;
+    public static SoundEvent WHOOSH_HEAVY1;
+    public static SoundEvent WHOOSH_HEAVY2;
+    public static SoundEvent WHOOSH_HEAVY3;
+    public static SoundEvent WHOOSH_HEAVY4;
+    public static SoundEvent WHOOSH_HEAVY5;
+    public static SoundEvent WHOOSH_LIGHT1;
+    public static SoundEvent WHOOSH_LIGHT2;
+    public static SoundEvent WHOOSH_LIGHT3;
+    public static SoundEvent WHOOSH_LIGHT4;
+    public static SoundEvent WHOOSH_LONG1;
+    public static SoundEvent WHOOSH_LONG2;
+    public static SoundEvent WHOOSH_SHARP1;
+    public static SoundEvent WHOOSH_SHARP2;
+    public static SoundEvent WHOOSH_SHARP3;
+    public static SoundEvent WHOOSH_SHARP4;
+    public static SoundEvent WHOOSH_SIMPLE1;
+    public static SoundEvent WHOOSH_SIMPLE2;
+    public static SoundEvent WHOOSH_SIMPLE3;
+    public static SoundEvent WHOOSH_SIMPLE4;
+
+    public IsekaiSounds() {
+    }
+
+    public static void init() {
+        registerSound(CAST_ACTIVATE_REG, CAST_ACTIVATE);
+        registerSound(CAST_REPLENISH_REG, CAST_REPLENISH);
+        registerSound(CRESCENTROSE_SHOOT_REG, CRESCENTROSE_SHOOT);
+        registerSound(CRESCENTROSE_CHARGE_REG, CRESCENTROSE_CHARGE);
+        registerSound(MAGICAL_HIT_REG, MAGICAL_HIT);
+
+        registerSound(WHOOSH_BLAZING1_REG, WHOOSH_BLAZING1);
+        registerSound(WHOOSH_BLAZING2_REG, WHOOSH_BLAZING2);
+        registerSound(WHOOSH_BLAZING3_REG, WHOOSH_BLAZING3);
+        registerSound(WHOOSH_BLAZING4_REG, WHOOSH_BLAZING4);
+        registerSound(WHOOSH_BLAZING5_REG, WHOOSH_BLAZING5);
+        registerSound(WHOOSH_BLAZING6_REG, WHOOSH_BLAZING6);
+        registerSound(WHOOSH_BLAZING7_REG, WHOOSH_BLAZING7);
+        registerSound(WHOOSH_BLAZING8_REG, WHOOSH_BLAZING8);
+        registerSound(WHOOSH_CHARGE1_REG, WHOOSH_CHARGE1);
+        registerSound(WHOOSH_CHARGE2_REG, WHOOSH_CHARGE2);
+        registerSound(WHOOSH_ELECTRIC1_REG, WHOOSH_ELECTRIC1);
+        registerSound(WHOOSH_ELECTRIC2_REG, WHOOSH_ELECTRIC2);
+        registerSound(WHOOSH_ELECTRIC3_REG, WHOOSH_ELECTRIC3);
+        registerSound(WHOOSH_ELECTRIC4_REG, WHOOSH_ELECTRIC4);
+        registerSound(WHOOSH_ELECTRIC5_REG, WHOOSH_ELECTRIC5);
+        registerSound(WHOOSH_HEAVY1_REG, WHOOSH_HEAVY1);
+        registerSound(WHOOSH_HEAVY2_REG, WHOOSH_HEAVY2);
+        registerSound(WHOOSH_HEAVY3_REG, WHOOSH_HEAVY3);
+        registerSound(WHOOSH_HEAVY4_REG, WHOOSH_HEAVY4);
+        registerSound(WHOOSH_HEAVY5_REG, WHOOSH_HEAVY5);
+        registerSound(WHOOSH_LIGHT1_REG, WHOOSH_LIGHT1);
+        registerSound(WHOOSH_LIGHT2_REG, WHOOSH_LIGHT2);
+        registerSound(WHOOSH_LIGHT3_REG, WHOOSH_LIGHT3);
+        registerSound(WHOOSH_LIGHT4_REG, WHOOSH_LIGHT4);
+        registerSound(WHOOSH_LONG1_REG, WHOOSH_LONG1);
+        registerSound(WHOOSH_LONG2_REG, WHOOSH_LONG2);
+        registerSound(WHOOSH_SHARP1_REG, WHOOSH_SHARP1);
+        registerSound(WHOOSH_SHARP2_REG, WHOOSH_SHARP2);
+        registerSound(WHOOSH_SHARP3_REG, WHOOSH_SHARP3);
+        registerSound(WHOOSH_SHARP4_REG, WHOOSH_SHARP4);
+        registerSound(WHOOSH_SIMPLE1_REG, WHOOSH_SIMPLE1);
+        registerSound(WHOOSH_SIMPLE2_REG, WHOOSH_SIMPLE2);
+        registerSound(WHOOSH_SIMPLE3_REG, WHOOSH_SIMPLE3);
+        registerSound(WHOOSH_SIMPLE4_REG, WHOOSH_SIMPLE4);
+    }
+
+
+    public static Identifier registerId(String name) {
+        return new Identifier("isekaiweaponryfabric:" + name);
+    }
+
+    public static SoundEvent registerSound(Identifier id, SoundEvent event) {
+        return (SoundEvent)Registry.register(Registry.SOUND_EVENT, id, event);
+    }
+
+    static {
+        CAST_ACTIVATE = new SoundEvent(CAST_ACTIVATE_REG);
+        CAST_REPLENISH = new SoundEvent(CAST_REPLENISH_REG);
+        CRESCENTROSE_SHOOT = new SoundEvent(CRESCENTROSE_SHOOT_REG);
+        CRESCENTROSE_CHARGE = new SoundEvent(CRESCENTROSE_CHARGE_REG);
+        MAGICAL_HIT = new SoundEvent(MAGICAL_HIT_REG);
+
+        WHOOSH_BLAZING1 = new SoundEvent(WHOOSH_BLAZING1_REG);
+        WHOOSH_BLAZING2 = new SoundEvent(WHOOSH_BLAZING2_REG);
+        WHOOSH_BLAZING3 = new SoundEvent(WHOOSH_BLAZING3_REG);
+        WHOOSH_BLAZING4 = new SoundEvent(WHOOSH_BLAZING4_REG);
+        WHOOSH_BLAZING5 = new SoundEvent(WHOOSH_BLAZING5_REG);
+        WHOOSH_BLAZING6 = new SoundEvent(WHOOSH_BLAZING6_REG);
+        WHOOSH_BLAZING7 = new SoundEvent(WHOOSH_BLAZING7_REG);
+        WHOOSH_BLAZING8 = new SoundEvent(WHOOSH_BLAZING8_REG);
+        WHOOSH_CHARGE1 = new SoundEvent(WHOOSH_CHARGE1_REG);
+        WHOOSH_CHARGE2 = new SoundEvent(WHOOSH_CHARGE2_REG);
+        WHOOSH_ELECTRIC1 = new SoundEvent(WHOOSH_ELECTRIC1_REG);
+        WHOOSH_ELECTRIC2 = new SoundEvent(WHOOSH_ELECTRIC2_REG);
+        WHOOSH_ELECTRIC3 = new SoundEvent(WHOOSH_ELECTRIC3_REG);
+        WHOOSH_ELECTRIC4 = new SoundEvent(WHOOSH_ELECTRIC4_REG);
+        WHOOSH_ELECTRIC5 = new SoundEvent(WHOOSH_ELECTRIC5_REG);
+        WHOOSH_HEAVY1 = new SoundEvent(WHOOSH_HEAVY1_REG);
+        WHOOSH_HEAVY2 = new SoundEvent(WHOOSH_HEAVY2_REG);
+        WHOOSH_HEAVY3 = new SoundEvent(WHOOSH_HEAVY3_REG);
+        WHOOSH_HEAVY4 = new SoundEvent(WHOOSH_HEAVY4_REG);
+        WHOOSH_HEAVY5 = new SoundEvent(WHOOSH_HEAVY5_REG);
+        WHOOSH_LIGHT1 = new SoundEvent(WHOOSH_LIGHT1_REG);
+        WHOOSH_LIGHT2 = new SoundEvent(WHOOSH_LIGHT2_REG);
+        WHOOSH_LIGHT3 = new SoundEvent(WHOOSH_LIGHT3_REG);
+        WHOOSH_LIGHT4 = new SoundEvent(WHOOSH_LIGHT4_REG);
+        WHOOSH_LONG1 = new SoundEvent(WHOOSH_LONG1_REG);
+        WHOOSH_LONG2 = new SoundEvent(WHOOSH_LONG2_REG);
+        WHOOSH_SHARP1 = new SoundEvent(WHOOSH_SHARP1_REG);
+        WHOOSH_SHARP2 = new SoundEvent(WHOOSH_SHARP2_REG);
+        WHOOSH_SHARP3 = new SoundEvent(WHOOSH_SHARP3_REG);
+        WHOOSH_SHARP4 = new SoundEvent(WHOOSH_SHARP4_REG);
+        WHOOSH_SIMPLE1 = new SoundEvent(WHOOSH_SIMPLE1_REG);
+        WHOOSH_SIMPLE2 = new SoundEvent(WHOOSH_SIMPLE2_REG);
+        WHOOSH_SIMPLE3 = new SoundEvent(WHOOSH_SIMPLE3_REG);
+        WHOOSH_SIMPLE4 = new SoundEvent(WHOOSH_SIMPLE4_REG);
+    }
+}

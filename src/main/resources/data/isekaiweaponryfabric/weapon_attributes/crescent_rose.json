@@ -1,0 +1,65 @@
+{
+  "parent": "bettercombat:scythe",
+  "attributes" : {
+    "pose": "isekaiweaponryfabric:pose_two_handed_scythe_generic1",
+    "attack_range": 3.6,
+    "category": "scythe",
+    "two_handed": true,
+    "attacks": [
+      {
+
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 0.75,
+        "angle": 150,
+        "upswing": 0.5,
+        "animation": "bettercombat:two_handed_slash_horizontal_right",
+        "swing_sound": {
+          "id": "bettercombat:scythe_slash",
+          "volume": 1.0,
+          "pitch": 1.3
+        }
+      },
+      {
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 1.0,
+        "angle": 360,
+        "upswing": 0.5,
+        "animation": "bettercombat:two_handed_spin",
+        "swing_sound": {
+          "id": "bettercombat:claymore_swing",
+          "volume": 1.0,
+          "pitch": 1.2
+        }
+      },
+      {
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 0.95,
+        "angle": 150,
+        "upswing": 0.5,
+        "animation": "bettercombat:two_handed_slash_horizontal_left",
+        "swing_sound": {
+          "id": "bettercombat:scythe_slash",
+          "volume": 1.0,
+          "pitch": 1.3
+        }
+      },
+      {
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 1.25,
+        "angle": 150,
+        "upswing": 0.5,
+        "animation": "bettercombat:two_handed_slam",
+        "swing_sound": {
+          "id": "bettercombat:claymore_slam",
+          "volume": 1.0,
+          "pitch": 1.4
+        }
+      }
+    ]
+  }
+}
+
+
+
+
+

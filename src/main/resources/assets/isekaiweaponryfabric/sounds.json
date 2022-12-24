@@ -1,0 +1,197 @@
+{
+  "cast_activate": {
+    "sounds": [
+      "isekaiweaponryfabric:cast_activate"
+    ]
+  },
+  "cast_replenish": {
+    "sounds": [
+      "isekaiweaponryfabric:cast_replenish"
+    ]
+  },
+  "crescentrose_shoot": {
+    "sounds": [
+      "isekaiweaponryfabric:crescentrose_shoot"
+    ]
+  },
+  "crescentrose_charge": {
+    "sounds": [
+      "isekaiweaponryfabric:crescentrose_charge"
+    ]
+  },
+  "magical_hit": {
+    "sounds": [
+      "isekaiweaponryfabric:magical_hit"
+    ]
+  },
+  "whoosh_blazing1": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_blazing1"
+    ]
+  },
+  "whoosh_blazing2": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_blazing2"
+    ]
+  },
+  "whoosh_blazing3": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_blazing3"
+    ]
+  },
+  "whoosh_blazing4": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_blazing4"
+    ]
+  },
+  "whoosh_blazing5": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_blazing5"
+    ]
+  },
+  "whoosh_blazing6": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_blazing6"
+    ]
+  },
+  "whoosh_blazing7": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_blazing7"
+    ]
+  },
+  "whoosh_blazing8": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_blazing8"
+    ]
+  },
+  "whoosh_charge1": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_charge1"
+    ]
+  },
+  "whoosh_charge2": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_charge2"
+    ]
+  },
+  "whoosh_electric1": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_electric1"
+    ]
+  },
+  "whoosh_electric2": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_electric2"
+    ]
+  },
+  "whoosh_electric3": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_electric3"
+    ]
+  },
+  "whoosh_electric4": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_electric4"
+    ]
+  },
+  "whoosh_electric5": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_electric5"
+    ]
+  },
+  "whoosh_heavy1": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_heavy1"
+    ]
+  },
+  "whoosh_heavy2": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_heavy2"
+    ]
+  },
+  "whoosh_heavy3": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_heavy3"
+    ]
+  },
+  "whoosh_heavy4": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_heavy4"
+    ]
+  },
+  "whoosh_heavy5": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_heavy5"
+    ]
+  },
+  "whoosh_light1": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_light1"
+    ]
+  },
+  "whoosh_light2": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_light2"
+    ]
+  },
+  "whoosh_light3": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_light3"
+    ]
+  },
+  "whoosh_light4": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_light4"
+    ]
+  },
+  "whoosh_long1": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_long1"
+    ]
+  },
+  "whoosh_long2": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_long2"
+    ]
+  },
+  "whoosh_sharp1": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_sharp1"
+    ]
+  },
+  "whoosh_sharp2": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_sharp2"
+    ]
+  },
+  "whoosh_sharp3": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_sharp3"
+    ]
+  },
+  "whoosh_sharp4": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_sharp4"
+    ]
+  },
+  "whoosh_simple1": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_simple1"
+    ]
+  },
+  "whoosh_simple2": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_simple2"
+    ]
+  },
+  "whoosh_simple3": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_simple3"
+    ]
+  },
+  "whoosh_simple4": {
+    "sounds": [
+      "isekaiweaponryfabric:whoosh_simple4"
+    ]
+  }
+}
