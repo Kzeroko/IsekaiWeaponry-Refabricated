@@ -1,12 +1,14 @@
 package net.kzeroko.isekaiweaponryfabric.init;
 
 import net.minecraft.sound.SoundEvent;
+import net.kzeroko.isekaiweaponryfabric.IsekaiUtils;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class IsekaiSounds {
     // Special ID
     public static final Identifier CAST_ACTIVATE_REG = registerId("cast_activate");
+    public static final Identifier CAST_BUFF_REG = registerId("cast_buff");
+    public static final Identifier CAST_NIGHTMARE_REG = registerId("cast_nightmare");
     public static final Identifier CAST_REPLENISH_REG = registerId("cast_replenish");
     public static final Identifier CRESCENTROSE_SHOOT_REG = registerId("crescentrose_shoot");
     public static final Identifier CRESCENTROSE_CHARGE_REG = registerId("crescentrose_charge");
@@ -49,6 +51,8 @@ public class IsekaiSounds {
 
     // Special Event
     public static SoundEvent CAST_ACTIVATE;
+    public static SoundEvent CAST_BUFF;
+    public static SoundEvent CAST_NIGHTMARE;
     public static SoundEvent CAST_REPLENISH;
     public static SoundEvent CRESCENTROSE_SHOOT;
     public static SoundEvent CRESCENTROSE_CHARGE;
@@ -93,59 +97,58 @@ public class IsekaiSounds {
     }
 
     public static void init() {
-        registerSound(CAST_ACTIVATE_REG, CAST_ACTIVATE);
-        registerSound(CAST_REPLENISH_REG, CAST_REPLENISH);
-        registerSound(CRESCENTROSE_SHOOT_REG, CRESCENTROSE_SHOOT);
-        registerSound(CRESCENTROSE_CHARGE_REG, CRESCENTROSE_CHARGE);
-        registerSound(MAGICAL_HIT_REG, MAGICAL_HIT);
+        IsekaiUtils.registerSound(CAST_ACTIVATE_REG, CAST_ACTIVATE);
+        IsekaiUtils.registerSound(CAST_BUFF_REG, CAST_BUFF);
+        IsekaiUtils.registerSound(CAST_NIGHTMARE_REG, CAST_NIGHTMARE);
+        IsekaiUtils.registerSound(CAST_REPLENISH_REG, CAST_REPLENISH);
+        IsekaiUtils.registerSound(CRESCENTROSE_SHOOT_REG, CRESCENTROSE_SHOOT);
+        IsekaiUtils.registerSound(CRESCENTROSE_CHARGE_REG, CRESCENTROSE_CHARGE);
+        IsekaiUtils.registerSound(MAGICAL_HIT_REG, MAGICAL_HIT);
 
-        registerSound(WHOOSH_BLAZING1_REG, WHOOSH_BLAZING1);
-        registerSound(WHOOSH_BLAZING2_REG, WHOOSH_BLAZING2);
-        registerSound(WHOOSH_BLAZING3_REG, WHOOSH_BLAZING3);
-        registerSound(WHOOSH_BLAZING4_REG, WHOOSH_BLAZING4);
-        registerSound(WHOOSH_BLAZING5_REG, WHOOSH_BLAZING5);
-        registerSound(WHOOSH_BLAZING6_REG, WHOOSH_BLAZING6);
-        registerSound(WHOOSH_BLAZING7_REG, WHOOSH_BLAZING7);
-        registerSound(WHOOSH_BLAZING8_REG, WHOOSH_BLAZING8);
-        registerSound(WHOOSH_CHARGE1_REG, WHOOSH_CHARGE1);
-        registerSound(WHOOSH_CHARGE2_REG, WHOOSH_CHARGE2);
-        registerSound(WHOOSH_ELECTRIC1_REG, WHOOSH_ELECTRIC1);
-        registerSound(WHOOSH_ELECTRIC2_REG, WHOOSH_ELECTRIC2);
-        registerSound(WHOOSH_ELECTRIC3_REG, WHOOSH_ELECTRIC3);
-        registerSound(WHOOSH_ELECTRIC4_REG, WHOOSH_ELECTRIC4);
-        registerSound(WHOOSH_ELECTRIC5_REG, WHOOSH_ELECTRIC5);
-        registerSound(WHOOSH_HEAVY1_REG, WHOOSH_HEAVY1);
-        registerSound(WHOOSH_HEAVY2_REG, WHOOSH_HEAVY2);
-        registerSound(WHOOSH_HEAVY3_REG, WHOOSH_HEAVY3);
-        registerSound(WHOOSH_HEAVY4_REG, WHOOSH_HEAVY4);
-        registerSound(WHOOSH_HEAVY5_REG, WHOOSH_HEAVY5);
-        registerSound(WHOOSH_LIGHT1_REG, WHOOSH_LIGHT1);
-        registerSound(WHOOSH_LIGHT2_REG, WHOOSH_LIGHT2);
-        registerSound(WHOOSH_LIGHT3_REG, WHOOSH_LIGHT3);
-        registerSound(WHOOSH_LIGHT4_REG, WHOOSH_LIGHT4);
-        registerSound(WHOOSH_LONG1_REG, WHOOSH_LONG1);
-        registerSound(WHOOSH_LONG2_REG, WHOOSH_LONG2);
-        registerSound(WHOOSH_SHARP1_REG, WHOOSH_SHARP1);
-        registerSound(WHOOSH_SHARP2_REG, WHOOSH_SHARP2);
-        registerSound(WHOOSH_SHARP3_REG, WHOOSH_SHARP3);
-        registerSound(WHOOSH_SHARP4_REG, WHOOSH_SHARP4);
-        registerSound(WHOOSH_SIMPLE1_REG, WHOOSH_SIMPLE1);
-        registerSound(WHOOSH_SIMPLE2_REG, WHOOSH_SIMPLE2);
-        registerSound(WHOOSH_SIMPLE3_REG, WHOOSH_SIMPLE3);
-        registerSound(WHOOSH_SIMPLE4_REG, WHOOSH_SIMPLE4);
+        IsekaiUtils.registerSound(WHOOSH_BLAZING1_REG, WHOOSH_BLAZING1);
+        IsekaiUtils.registerSound(WHOOSH_BLAZING2_REG, WHOOSH_BLAZING2);
+        IsekaiUtils.registerSound(WHOOSH_BLAZING3_REG, WHOOSH_BLAZING3);
+        IsekaiUtils.registerSound(WHOOSH_BLAZING4_REG, WHOOSH_BLAZING4);
+        IsekaiUtils.registerSound(WHOOSH_BLAZING5_REG, WHOOSH_BLAZING5);
+        IsekaiUtils.registerSound(WHOOSH_BLAZING6_REG, WHOOSH_BLAZING6);
+        IsekaiUtils.registerSound(WHOOSH_BLAZING7_REG, WHOOSH_BLAZING7);
+        IsekaiUtils.registerSound(WHOOSH_BLAZING8_REG, WHOOSH_BLAZING8);
+        IsekaiUtils.registerSound(WHOOSH_CHARGE1_REG, WHOOSH_CHARGE1);
+        IsekaiUtils.registerSound(WHOOSH_CHARGE2_REG, WHOOSH_CHARGE2);
+        IsekaiUtils.registerSound(WHOOSH_ELECTRIC1_REG, WHOOSH_ELECTRIC1);
+        IsekaiUtils.registerSound(WHOOSH_ELECTRIC2_REG, WHOOSH_ELECTRIC2);
+        IsekaiUtils.registerSound(WHOOSH_ELECTRIC3_REG, WHOOSH_ELECTRIC3);
+        IsekaiUtils.registerSound(WHOOSH_ELECTRIC4_REG, WHOOSH_ELECTRIC4);
+        IsekaiUtils.registerSound(WHOOSH_ELECTRIC5_REG, WHOOSH_ELECTRIC5);
+        IsekaiUtils.registerSound(WHOOSH_HEAVY1_REG, WHOOSH_HEAVY1);
+        IsekaiUtils.registerSound(WHOOSH_HEAVY2_REG, WHOOSH_HEAVY2);
+        IsekaiUtils.registerSound(WHOOSH_HEAVY3_REG, WHOOSH_HEAVY3);
+        IsekaiUtils.registerSound(WHOOSH_HEAVY4_REG, WHOOSH_HEAVY4);
+        IsekaiUtils.registerSound(WHOOSH_HEAVY5_REG, WHOOSH_HEAVY5);
+        IsekaiUtils.registerSound(WHOOSH_LIGHT1_REG, WHOOSH_LIGHT1);
+        IsekaiUtils.registerSound(WHOOSH_LIGHT2_REG, WHOOSH_LIGHT2);
+        IsekaiUtils.registerSound(WHOOSH_LIGHT3_REG, WHOOSH_LIGHT3);
+        IsekaiUtils.registerSound(WHOOSH_LIGHT4_REG, WHOOSH_LIGHT4);
+        IsekaiUtils.registerSound(WHOOSH_LONG1_REG, WHOOSH_LONG1);
+        IsekaiUtils.registerSound(WHOOSH_LONG2_REG, WHOOSH_LONG2);
+        IsekaiUtils.registerSound(WHOOSH_SHARP1_REG, WHOOSH_SHARP1);
+        IsekaiUtils.registerSound(WHOOSH_SHARP2_REG, WHOOSH_SHARP2);
+        IsekaiUtils.registerSound(WHOOSH_SHARP3_REG, WHOOSH_SHARP3);
+        IsekaiUtils.registerSound(WHOOSH_SHARP4_REG, WHOOSH_SHARP4);
+        IsekaiUtils.registerSound(WHOOSH_SIMPLE1_REG, WHOOSH_SIMPLE1);
+        IsekaiUtils.registerSound(WHOOSH_SIMPLE2_REG, WHOOSH_SIMPLE2);
+        IsekaiUtils.registerSound(WHOOSH_SIMPLE3_REG, WHOOSH_SIMPLE3);
+        IsekaiUtils.registerSound(WHOOSH_SIMPLE4_REG, WHOOSH_SIMPLE4);
     }
-
 
     public static Identifier registerId(String name) {
         return new Identifier("isekaiweaponryfabric:" + name);
     }
 
-    public static SoundEvent registerSound(Identifier id, SoundEvent event) {
-        return (SoundEvent)Registry.register(Registry.SOUND_EVENT, id, event);
-    }
-
     static {
         CAST_ACTIVATE = new SoundEvent(CAST_ACTIVATE_REG);
+        CAST_BUFF = new SoundEvent(CAST_BUFF_REG);
+        CAST_NIGHTMARE = new SoundEvent(CAST_NIGHTMARE_REG);
         CAST_REPLENISH = new SoundEvent(CAST_REPLENISH_REG);
         CRESCENTROSE_SHOOT = new SoundEvent(CRESCENTROSE_SHOOT_REG);
         CRESCENTROSE_CHARGE = new SoundEvent(CRESCENTROSE_CHARGE_REG);

@@ -1,7 +1,7 @@
 {
   "parent": "bettercombat:scythe",
   "attributes" : {
-    "pose": "isekaiweaponryfabric:pose_two_handed_scythe_generic1",
+    "pose": "isekaiweaponryfabric:pose_two_handed_scythe_generic2",
     "attack_range": 3.6,
     "category": "scythe",
     "two_handed": true,
@@ -9,24 +9,12 @@
       {
 
         "hitbox": "HORIZONTAL_PLANE",
-        "damage_multiplier": 0.75,
-        "angle": 150,
+        "damage_multiplier": 1.1,
+        "angle": 160,
         "upswing": 0.5,
-        "animation": "bettercombat:two_handed_slash_horizontal_right",
+        "animation": "isekaiweaponryfabric:two_handed_scythe_slash1",
         "swing_sound": {
-          "id": "bettercombat:scythe_slash",
-          "volume": 1.0,
-          "pitch": 1.3
-        }
-      },
-      {
-        "hitbox": "HORIZONTAL_PLANE",
-        "damage_multiplier": 1.0,
-        "angle": 360,
-        "upswing": 0.5,
-        "animation": "bettercombat:two_handed_spin",
-        "swing_sound": {
-          "id": "bettercombat:claymore_swing",
+          "id": "isekaiweaponryfabric:whoosh_simple3",
           "volume": 1.0,
           "pitch": 1.2
         }
@@ -38,21 +26,81 @@
         "upswing": 0.5,
         "animation": "bettercombat:two_handed_slash_horizontal_left",
         "swing_sound": {
-          "id": "bettercombat:scythe_slash",
+          "id": "isekaiweaponryfabric:whoosh_simple3",
+          "volume": 1.0,
+          "pitch": 1.1
+        }
+      },
+      {
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 1.05,
+        "angle": 360,
+        "upswing": 0.5,
+        "animation": "isekaiweaponryfabric:two_handed_scythe_slash4",
+        "swing_sound": {
+          "id": "isekaiweaponryfabric:whoosh_simple3",
+          "volume": 1.0,
+          "pitch": 1.1
+        }
+      },
+      {
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 1.15,
+        "angle": 180,
+        "upswing": 0.5,
+        "animation": "isekaiweaponryfabric:two_handed_scythe_slash3",
+        "swing_sound": {
+          "id": "isekaiweaponryfabric:whoosh_simple3",
           "volume": 1.0,
           "pitch": 1.3
         }
       },
       {
-        "hitbox": "HORIZONTAL_PLANE",
-        "damage_multiplier": 1.25,
-        "angle": 150,
+        "hitbox": "VERTICAL_PLANE",
+        "damage_multiplier": 0.8,
+        "angle": 60,
         "upswing": 0.5,
-        "animation": "bettercombat:two_handed_slam",
+        "animation": "bettercombat:two_handed_stab_right",
         "swing_sound": {
-          "id": "bettercombat:claymore_slam",
+          "id": "isekaiweaponryfabric:whoosh_simple4",
           "volume": 1.0,
-          "pitch": 1.4
+          "pitch": 1.0
+        }
+      },
+      {
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 1.0,
+        "angle": 360,
+        "upswing": 0.5,
+        "animation": "bettercombat:two_handed_spin",
+        "swing_sound": {
+          "id": "isekaiweaponryfabric:whoosh_simple3",
+          "volume": 1.0,
+          "pitch": 1.1
+        }
+      },
+      {
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 0.9,
+        "angle": 160,
+        "upswing": 0.5,
+        "animation": "bettercombat:two_handed_slash_horizontal_right",
+        "swing_sound": {
+          "id": "isekaiweaponryfabric:whoosh_simple3",
+          "volume": 1.0,
+          "pitch": 1.1
+        }
+      },
+      {
+        "hitbox": "VERTICAL_PLANE",
+        "damage_multiplier": 1.2,
+        "angle": 70,
+        "upswing": 0.5,
+        "animation": "isekaiweaponryfabric:two_handed_scythe_slash2",
+        "swing_sound": {
+          "id": "isekaiweaponryfabric:whoosh_heavy3",
+          "volume": 1.0,
+          "pitch": 1.3
         }
       }
     ]

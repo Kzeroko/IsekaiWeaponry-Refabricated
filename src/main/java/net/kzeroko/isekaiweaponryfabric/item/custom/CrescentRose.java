@@ -64,17 +64,27 @@ public class CrescentRose extends SwordItem implements IAnimatable, ISyncable {
             PlayerEntity player = (PlayerEntity)user;
             ItemStack stack = player.getMainHandStack();
             if (!player.getItemCooldownManager().isCoolingDown(this)) {
-                if (!world.isClient)
+                if (!world.isClient && !player.isSneaking())
                 {
-                    player.getItemCooldownManager().set(this, 20 * 15);
+                    player.getItemCooldownManager().set(this, 20 * 4);
                     CrescentroseProjectile entity = new CrescentroseProjectile(IsekaiEntities.CRESCENTROSE_PROJECTILE, world, user);
                     entity.setAgeAndPoints(30, 75);
                     entity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 2.5F, 1.0F);
-                    entity.setDamage(MidnightConfigConstructor.crescentrose_bullet_damage);
+                    entity.setDamage(MidnightConfigConstructor.crescentrose_bullet_basedamage);
                     stack.damage(1, user, p -> p.sendToolBreakStatus(user.getActiveHand()));
                     world.spawnEntity(entity);
                     world.playSound(null, user.getBlockPos(), IsekaiSounds.CRESCENTROSE_SHOOT, SoundCategory.PLAYERS, 1.0F, 1.0F);
-                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20 * 3, 1, false, false, false));
+                    player.setVelocity(player.getRotationVector().multiply(-0.6));
+                    player.velocityModified = true;
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20 * 3, 0, false, false, false));
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20 * 3, 0, false, false, false));
+                } else if (!world.isClient && player.isSneaking()){
+                    player.getItemCooldownManager().set(this, 20 * 4);
+                    stack.damage(1, user, p -> p.sendToolBreakStatus(user.getActiveHand()));
+                    world.playSound(null, user.getBlockPos(), IsekaiSounds.CRESCENTROSE_SHOOT, SoundCategory.PLAYERS, 0.7F, 1.0F);
+                    player.setVelocity(player.getRotationVector().multiply(2.2));
+                    player.velocityModified = true;
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20 * 3, 2, false, false, false));
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20 * 3, 2, false, false, false));
                 }
             }

@@ -4,6 +4,16 @@
       "isekaiweaponryfabric:cast_activate"
     ]
   },
+  "cast_buff": {
+    "sounds": [
+      "isekaiweaponryfabric:cast_buff"
+    ]
+  },
+  "cast_nightmare": {
+    "sounds": [
+      "isekaiweaponryfabric:cast_nightmare"
+    ]
+  },
   "cast_replenish": {
     "sounds": [
       "isekaiweaponryfabric:cast_replenish"

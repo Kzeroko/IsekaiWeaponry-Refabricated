@@ -10,8 +10,6 @@ import net.minecraft.util.Identifier;
 
 public class IsekaiEntities {
 
-    public IsekaiEntities() {}
-
     public static EntityType<CrescentroseProjectile> CRESCENTROSE_PROJECTILE = buildEntity(CrescentroseProjectile::new, CrescentroseProjectile.class, 0.5F,
             0.5F, SpawnGroup.MISC);
 

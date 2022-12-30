@@ -3,6 +3,8 @@ package net.kzeroko.isekaiweaponryfabric.item.custom;
 import net.kzeroko.isekaiweaponryfabric.config.MidnightConfigConstructor;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
@@ -15,6 +17,13 @@ import java.util.List;
 public class RazorEdge extends SwordItem {
     public RazorEdge(ToolMaterial toolMaterial, float attackSpeed, Settings settings) {
         super(toolMaterial, MidnightConfigConstructor.razor_edge_damage, attackSpeed, settings);
+    }
+
+    public static float WeaponDamage = MidnightConfigConstructor.razor_edge_damage;
+
+    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        target.damage(DamageSource.MAGIC, WeaponDamage);
+        return super.postHit(stack, target, attacker);
     }
 
     @Override

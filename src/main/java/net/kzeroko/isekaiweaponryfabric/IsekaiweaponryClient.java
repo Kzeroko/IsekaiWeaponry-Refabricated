@@ -12,6 +12,6 @@ public class IsekaiweaponryClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         GeoItemRenderer.registerItemRenderer(IsekaiWeapons.CRESCENT_ROSE, new CrescentroseRenderer());
-        EntityRendererRegistry.register(IsekaiEntities.CRESCENTROSE_PROJECTILE, (ctx) -> new CrescentroseProjectileRenderer(ctx));
+        EntityRendererRegistry.register(IsekaiEntities.CRESCENTROSE_PROJECTILE, CrescentroseProjectileRenderer::new);
     }
 }

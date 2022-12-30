@@ -1,10 +1,11 @@
 package net.kzeroko.isekaiweaponryfabric.config;
 
 public class MidnightConfigConstructor extends MidnightConfig {
-
+    // @Comment public static Comment c_kannas_devilspear_damage;
     @Entry
     public static int kannas_devilspear_damage = 17;
 
+    // @Comment public static Comment c_kannas_devilspear_extradamage;
     @Entry
     public static float kannas_devilspear_extradamage = 11.5F;
 
@@ -33,7 +34,7 @@ public class MidnightConfigConstructor extends MidnightConfig {
     public static int spuit_lance_damage = 27;
 
     @Entry
-    public static int spuit_lance_extradamage = 8;
+    public static float spuit_lance_extradamage = 8;
 
     @Entry
     public static float spuit_lance_heal_portion = 5.0F;
@@ -57,7 +58,7 @@ public class MidnightConfigConstructor extends MidnightConfig {
     public static int crescent_rose_damage = 15;
 
     @Entry
-    public static int crescentrose_bullet_damage = 8;
+    public static double crescentrose_bullet_basedamage = 8;
 
     @Entry
     public static int monado_ii_damage = 23;

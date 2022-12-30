@@ -1,13 +1,20 @@
 package net.kzeroko.isekaiweaponryfabric.item.custom;
 
 import net.kzeroko.isekaiweaponryfabric.config.MidnightConfigConstructor;
+import net.kzeroko.isekaiweaponryfabric.init.IsekaiEffects;
+import net.kzeroko.isekaiweaponryfabric.init.IsekaiSounds;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
+import net.minecraft.util.Hand;
+import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -15,6 +22,22 @@ import java.util.List;
 public class OrigamiMomiji extends SwordItem {
     public OrigamiMomiji(ToolMaterial toolMaterial, float attackSpeed, Settings settings) {
         super(toolMaterial, MidnightConfigConstructor.origami_momiji_damage, attackSpeed, settings);
+    }
+
+    @Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+        if (user instanceof PlayerEntity) {
+            PlayerEntity player = (PlayerEntity)user;
+            if (!player.getItemCooldownManager().isCoolingDown(this)) {
+                if (!world.isClient)
+                {
+                    player.getItemCooldownManager().set(this, 20 * 90);
+                    world.playSound(null, user.getBlockPos(), IsekaiSounds.CAST_BUFF, SoundCategory.PLAYERS, 1.0F, 1.0F);
+                    player.addStatusEffect(new StatusEffectInstance(IsekaiEffects.TENJU, 20 * 30, 0, false, false, true));
+                }
+            }
+        }
+        return super.use(world, user, hand);
     }
 
     @Override
