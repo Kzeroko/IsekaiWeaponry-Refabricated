@@ -12,6 +12,9 @@ public class IsekaiSounds {
     public static final Identifier CAST_REPLENISH_REG = registerId("cast_replenish");
     public static final Identifier CRESCENTROSE_SHOOT_REG = registerId("crescentrose_shoot");
     public static final Identifier CRESCENTROSE_CHARGE_REG = registerId("crescentrose_charge");
+    public static final Identifier DONNERANDSCHLAG_HIT_REG = registerId("donnerandschlag_hit");
+    public static final Identifier DONNERANDSCHLAG_RELOAD_REG = registerId("donnerandschlag_reload");
+    public static final Identifier DONNERANDSCHLAG_SHOOT_REG = registerId("donnerandschlag_shoot");
     public static final Identifier MAGICAL_HIT_REG = registerId("magical_hit");
     // Templates ID
     public static final Identifier WHOOSH_BLAZING1_REG = registerId("whoosh_blazing1");
@@ -56,6 +59,9 @@ public class IsekaiSounds {
     public static SoundEvent CAST_REPLENISH;
     public static SoundEvent CRESCENTROSE_SHOOT;
     public static SoundEvent CRESCENTROSE_CHARGE;
+    public static SoundEvent DONNERANDSCHLAG_HIT;
+    public static SoundEvent DONNERANDSCHLAG_RELOAD;
+    public static SoundEvent DONNERANDSCHLAG_SHOOT;
     public static SoundEvent MAGICAL_HIT;
     // Template Event
     public static SoundEvent WHOOSH_BLAZING1;
@@ -103,6 +109,9 @@ public class IsekaiSounds {
         IsekaiUtils.registerSound(CAST_REPLENISH_REG, CAST_REPLENISH);
         IsekaiUtils.registerSound(CRESCENTROSE_SHOOT_REG, CRESCENTROSE_SHOOT);
         IsekaiUtils.registerSound(CRESCENTROSE_CHARGE_REG, CRESCENTROSE_CHARGE);
+        IsekaiUtils.registerSound(DONNERANDSCHLAG_HIT_REG, DONNERANDSCHLAG_HIT);
+        IsekaiUtils.registerSound(DONNERANDSCHLAG_RELOAD_REG, DONNERANDSCHLAG_RELOAD);
+        IsekaiUtils.registerSound(DONNERANDSCHLAG_SHOOT_REG, DONNERANDSCHLAG_SHOOT);
         IsekaiUtils.registerSound(MAGICAL_HIT_REG, MAGICAL_HIT);
 
         IsekaiUtils.registerSound(WHOOSH_BLAZING1_REG, WHOOSH_BLAZING1);
@@ -152,6 +161,9 @@ public class IsekaiSounds {
         CAST_REPLENISH = new SoundEvent(CAST_REPLENISH_REG);
         CRESCENTROSE_SHOOT = new SoundEvent(CRESCENTROSE_SHOOT_REG);
         CRESCENTROSE_CHARGE = new SoundEvent(CRESCENTROSE_CHARGE_REG);
+        DONNERANDSCHLAG_HIT = new SoundEvent(DONNERANDSCHLAG_HIT_REG);
+        DONNERANDSCHLAG_RELOAD = new SoundEvent(DONNERANDSCHLAG_RELOAD_REG);
+        DONNERANDSCHLAG_SHOOT = new SoundEvent(DONNERANDSCHLAG_SHOOT_REG);
         MAGICAL_HIT = new SoundEvent(MAGICAL_HIT_REG);
 
         WHOOSH_BLAZING1 = new SoundEvent(WHOOSH_BLAZING1_REG);

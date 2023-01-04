@@ -18,6 +18,13 @@
   "item.isekaiweaponryfabric.origami_setsugekka": "§b§l灵式机巧-「雪月花」",
   "item.isekaiweaponryfabric.origami_momiji": "§b§l灵式机巧-「红叶」",
   "item.isekaiweaponryfabric.origami_katenrougetsuamahisa": "§b§l灵式机巧-「华天胧月天久」",
+  "item.isekaiweaponryfabric.donner": "§c§l「多纳尔」",
+  "item.isekaiweaponryfabric.schlag": "§c§l「休拉克」",
+
+  "item.isekaiweaponryfabric.alloyed_bullets": "合金子弹（集束）",
+  "item.isekaiweaponryfabric.alloyed_bullet": "合金子弹",
+
+  "item.isekaiweaponryfabric.prosthetic_armcoat": "§c§l义肢大衣",
 
   "desc.isekaiweaponryfabric.kannas_devilspear": "§c能力：§b猎魔祭",
   "desc.isekaiweaponryfabric.kisaras_devilsword": "§c能力：§b猎魔祭",
@@ -38,6 +45,7 @@
   "desc.isekaiweaponryfabric.origami_setsugekka": "§c能力：§b天咒解放·B",
   "desc.isekaiweaponryfabric.origami_momiji": "§c能力：§b天咒解放·A",
   "desc.isekaiweaponryfabric.origami_katenrougetsuamahisa": "§c能力：§b天咒解放·A+",
+  "desc.isekaiweaponryfabric.donner_and_schlag": "§c能力：§b转轮式电磁加速手枪",
 
   "desc.isekaiweaponryfabric.kannas_devilspear_story": "一把来自其它维度的猎魔武器。令人意外的是，它也能对这个世界的§6§o亡灵生物§f§o造成致命的§6§o魔力§f§o打击",
   "desc.isekaiweaponryfabric.kisaras_devilsword_story": "一把来自其它维度的猎魔武器。令人意外的是，它也能对这个世界的§6§o亡灵生物§f§o造成致命的§6§o魔力§f§o打击",
@@ -58,6 +66,11 @@
   "desc.isekaiweaponryfabric.origami_setsugekka_story": "可以释放出灵式机巧刀的独有技能§6§o「天咒」§f§o，在期间获得§6§o大幅攻击与防御性能增强§f§o，技能持续时间与技能冷却根据刀的品级而异。§b§o持续时间§6§o10秒§f§o，§b§o冷却时间§6§o90秒",
   "desc.isekaiweaponryfabric.origami_momiji_story": "可以释放出灵式机巧刀的独有技能§6§o「天咒」§f§o，在期间获得§6§o大幅攻击与防御性能增强§f§o，技能持续时间与技能冷却根据刀的品级而异。§b§o持续时间§6§o30秒§f§o，§b§o冷却时间§6§o90秒",
   "desc.isekaiweaponryfabric.origami_katenrougetsuamahisa_story": "可以释放出灵式机巧刀的独有技能§6§o「天咒」§f§o，在期间获得§6§o大幅攻击与防御性能增强§f§o，技能持续时间与技能冷却根据刀的品级而异。§b§o持续时间§6§o40秒§f§o，§b§o冷却时间§6§o90秒",
+  "desc.isekaiweaponryfabric.donner_and_schlag_story": "由极品矿物合成的魔法驱动手枪。能够§6§o射出强力子弹§f§o，双持§c§o「多纳尔」§f§o与§c§o「休拉克」§f§o可以进行连弹射击。弹药耗尽时在主手手持武器才能装填弹药。§b§o「需要：合金子弹（集束）」§f§o",
+
+  "desc.isekaiweaponryfabric.prosthetic_armcoat": "§c能力：§b暂无",
+
+  "desc.isekaiweaponryfabric.prosthetic_armcoat_story": "",
 
   "desc.isekaiweaponryfabric.weapon_overlord": "✵出自「不死者之王」✵",
   "desc.isekaiweaponryfabric.weapon_asterisk": "✡出自「学战都市六芒星」✡",
@@ -71,8 +84,13 @@
   "desc.isekaiweaponryfabric.weapon_xenoblade": "✘出自「异度之刃」✘",
   "desc.isekaiweaponryfabric.weapon_origami1": "⚜出自「红月摇曳的恋之星火」⚜",
   "desc.isekaiweaponryfabric.weapon_origami2": "⚜出自「牵绊闪耀的恋之伊吕波」⚜",
+  "desc.isekaiweaponryfabric.weapon_arifureta": "✠出自「平凡职业造就世界最强」✠",
+
+  "desc.isekaiweaponryfabric.armor_arifureta": "✠出自「平凡职业造就世界最强」✠",
 
   "desc.isekaiweaponryfabric.shift": "按住 [§6§lSHIFT§f§l] 显示物品简介",
+  "desc.isekaiweaponryfabric.rangedamage": "可造成伤害：%d",
+  "desc.isekaiweaponryfabric.leftammo": "剩余弹药数：%d / 6",
 
   "effect.isekaiweaponryfabric.tenju": "§b天咒",
   "effect.isekaiweaponryfabric.pandoras_dance": "§d潘朵拉之舞",
@@ -82,5 +100,7 @@
   "isekaiweaponryfabric.midnightconfig.c_kannas_devilspear_damage": "set base damage for Kanna's Devil Spear",
   "isekaiweaponryfabric.midnightconfig.c_kannas_devilspear_extradamage": "set skill extra damage for Kanna's Devil Spear",
 
-  "itemGroup.isekaiweaponryfabric.weapons": "§d\uD83D\uDDE1异界武装\uD83D\uDDE1"
+  "itemGroup.isekaiweaponryfabric.weapons": "§d\uD83D\uDDE1异界武装\uD83D\uDDE1",
+  "itemGroup.isekaiweaponryfabric.rangeweapons": "§d⦾异界武装 - 远程⦾",
+  "itemGroup.isekaiweaponryfabric.miscitems": "§d▲异界武装 - 杂项▲"
 }

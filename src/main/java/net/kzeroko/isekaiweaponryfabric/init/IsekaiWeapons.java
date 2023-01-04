@@ -2,8 +2,8 @@ package net.kzeroko.isekaiweaponryfabric.init;
 
 import net.kzeroko.isekaiweaponryfabric.IsekaiUtils;
 import net.kzeroko.isekaiweaponryfabric.IsekaiweaponryFabric;
-import net.kzeroko.isekaiweaponryfabric.enums.IsekaiMaterials;
-import net.kzeroko.isekaiweaponryfabric.item.custom.*;
+import net.kzeroko.isekaiweaponryfabric.enums.IsekaiWeaponMaterials;
+import net.kzeroko.isekaiweaponryfabric.item.weapon.*;
 import net.minecraft.item.*;
 import net.minecraft.util.Rarity;
 
@@ -57,33 +57,33 @@ public class IsekaiWeapons {
     static {
         WEAPONS = IsekaiweaponryFabric.WEAPONS;
         // Engage Kiss
-        KANNAS_DEVILSPEAR = new KannasDevilspear(IsekaiMaterials.ENGAGEKISS,-2.4F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
-        KISARAS_DEVILSWORD = new KisarasDevilsword(IsekaiMaterials.ENGAGEKISS,-2.4F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        KANNAS_DEVILSPEAR = new KannasDevilspear(IsekaiWeaponMaterials.ENGAGEKISS,-2.4F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        KISARAS_DEVILSWORD = new KisarasDevilsword(IsekaiWeaponMaterials.ENGAGEKISS,-2.4F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         // Gakusen Toshi Asterisk
-        PAN_DORAL = new PanDoraL(IsekaiMaterials.ASTERISK, -2.5F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
-        PAN_DORAR = new PanDoraR(IsekaiMaterials.ASTERISK,-2.5F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
-        SER_VERESTA = new SerVeresta(IsekaiMaterials.ASTERISK,-2.6F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        PAN_DORAL = new PanDoraL(IsekaiWeaponMaterials.ASTERISK, -2.5F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        PAN_DORAR = new PanDoraR(IsekaiWeaponMaterials.ASTERISK,-2.5F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        SER_VERESTA = new SerVeresta(IsekaiWeaponMaterials.ASTERISK,-2.6F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         // Overlord
-        RAZOR_EDGE = new RazorEdge(IsekaiMaterials.OVERLORD,-2.5F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
-        SHADOWOF_YGGDRASIL = new ShadowofYggdrasil(IsekaiMaterials.OVERLORD,-2.8F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
-        SPUIT_LANCE = new SpuitLance(IsekaiMaterials.OVERLORD,-2.4F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
-        CHARONS_GUIDANCE = new CharonsGuidance(IsekaiMaterials.OVERLORD,-2.5F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        RAZOR_EDGE = new RazorEdge(IsekaiWeaponMaterials.OVERLORD,-2.5F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        SHADOWOF_YGGDRASIL = new ShadowofYggdrasil(IsekaiWeaponMaterials.OVERLORD,-2.8F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        SPUIT_LANCE = new SpuitLance(IsekaiWeaponMaterials.OVERLORD,-2.4F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        CHARONS_GUIDANCE = new CharonsGuidance(IsekaiWeaponMaterials.OVERLORD,-2.5F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         // Date A Live
-        TOHKAS_SANDALPHON = new TohkasSandalphon(IsekaiMaterials.DAL,-2.6F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        TOHKAS_SANDALPHON = new TohkasSandalphon(IsekaiWeaponMaterials.DAL,-2.6F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         // Metal Gear RR
-        HF_MURAMASA = new HfMuramasa(IsekaiMaterials.MGRR,-2.1F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        HF_MURAMASA = new HfMuramasa(IsekaiWeaponMaterials.MGRR,-2.1F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         // Sword Art Online
-        LAMBENT_LIGHT = new LambentLight(IsekaiMaterials.SAO,-2.1F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        LAMBENT_LIGHT = new LambentLight(IsekaiWeaponMaterials.SAO,-2.1F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         // The Eminence in Shadow
-        PROTOTYPE_HOLYSWORD = new PrototypeHolysword(IsekaiMaterials.SHADOW,-2.5F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        PROTOTYPE_HOLYSWORD = new PrototypeHolysword(IsekaiWeaponMaterials.SHADOW,-2.5F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         // RWBY
-        CRESCENT_ROSE = new CrescentRose(IsekaiMaterials.RWBY,-2.6F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        CRESCENT_ROSE = new CrescentRose(IsekaiWeaponMaterials.RWBY,-2.6F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         // Xenoblade Chronicles
-        MONADO_II = new MonadoII(IsekaiMaterials.XENOBLADE,-2.4F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        MONADO_II = new MonadoII(IsekaiWeaponMaterials.XENOBLADE,-2.4F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         // ORIGAMI
-        ORIGAMI_SETSUGEKKA = new OrigamiSetsugekka(IsekaiMaterials.ORIGAMI,-2.3F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
-        ORIGAMI_MOMIJI = new OrigamiMomiji(IsekaiMaterials.ORIGAMI,-2.1F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
-        ORIGAMI_KATENROUGETSUAMAHISA = new OrigamiKatenRougetsuAmahisa(IsekaiMaterials.ORIGAMI,-2.2F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        ORIGAMI_SETSUGEKKA = new OrigamiSetsugekka(IsekaiWeaponMaterials.ORIGAMI,-2.3F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        ORIGAMI_MOMIJI = new OrigamiMomiji(IsekaiWeaponMaterials.ORIGAMI,-2.1F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        ORIGAMI_KATENROUGETSUAMAHISA = new OrigamiKatenRougetsuAmahisa(IsekaiWeaponMaterials.ORIGAMI,-2.2F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
     }
 }
 

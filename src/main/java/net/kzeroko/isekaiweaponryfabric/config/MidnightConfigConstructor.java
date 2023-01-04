@@ -58,7 +58,7 @@ public class MidnightConfigConstructor extends MidnightConfig {
     public static int crescent_rose_damage = 15;
 
     @Entry
-    public static double crescentrose_bullet_basedamage = 8;
+    public static double crescentrose_bullet_basedamage = 20;
 
     @Entry
     public static int monado_ii_damage = 23;
@@ -71,6 +71,9 @@ public class MidnightConfigConstructor extends MidnightConfig {
 
     @Entry
     public static int origami_katenrougetsuamahisa_damage = 17;
+
+    @Entry
+    public static double donnerandschlag_bullet_damage = 30;
 
     public MidnightConfigConstructor() {
     }

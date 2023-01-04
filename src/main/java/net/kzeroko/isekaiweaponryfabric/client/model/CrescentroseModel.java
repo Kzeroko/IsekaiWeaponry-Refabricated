@@ -1,7 +1,7 @@
 package net.kzeroko.isekaiweaponryfabric.client.model;
 
 import net.kzeroko.isekaiweaponryfabric.IsekaiweaponryFabric;
-import net.kzeroko.isekaiweaponryfabric.item.custom.CrescentRose;
+import net.kzeroko.isekaiweaponryfabric.item.weapon.CrescentRose;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 

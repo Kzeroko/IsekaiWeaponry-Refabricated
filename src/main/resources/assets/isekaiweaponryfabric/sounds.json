@@ -29,6 +29,21 @@
       "isekaiweaponryfabric:crescentrose_charge"
     ]
   },
+  "donnerandschlag_hit": {
+    "sounds": [
+      "isekaiweaponryfabric:donnerandschlag_hit"
+    ]
+  },
+  "donnerandschlag_reload": {
+    "sounds": [
+      "isekaiweaponryfabric:donnerandschlag_reload"
+    ]
+  },
+  "donnerandschlag_shoot": {
+    "sounds": [
+      "isekaiweaponryfabric:donnerandschlag_shoot"
+    ]
+  },
   "magical_hit": {
     "sounds": [
       "isekaiweaponryfabric:magical_hit"

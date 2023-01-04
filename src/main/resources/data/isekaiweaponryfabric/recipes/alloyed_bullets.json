@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    "D D",
+    "DDD"
+  ],
+  "key": {
+    "D": {
+      "item": "isekaiweaponryfabric:alloyed_bullet"
+    }
+  },
+  "result": {
+    "item": "isekaiweaponryfabric:alloyed_bullets",
+    "count": 1
+  }
+}
