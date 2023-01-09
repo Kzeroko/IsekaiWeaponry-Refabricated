@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.networking.v1.PlayerLookup;
 import net.kzeroko.isekaiweaponryfabric.IsekaiweaponryClient;
 import net.kzeroko.isekaiweaponryfabric.IsekaiweaponryFabric;
-import net.kzeroko.isekaiweaponryfabric.config.MidnightConfigConstructor;
 import net.kzeroko.isekaiweaponryfabric.entity.DonnerandschlagProjectile;
 import net.kzeroko.isekaiweaponryfabric.enums.IsekaiWeaponMaterials;
 import net.kzeroko.isekaiweaponryfabric.init.*;
@@ -31,8 +30,8 @@ import java.util.List;
 
 public class Schlag extends RangeWeapon {
 
-    public Schlag(Settings settings) {
-        super(settings);
+    public Schlag(int attackDamage, float attackSpeed, Settings settings) {
+        super(attackDamage, attackSpeed, settings);
     }
 
     @Override
@@ -54,15 +53,15 @@ public class Schlag extends RangeWeapon {
                     DonnerandschlagProjectile entity = new DonnerandschlagProjectile(IsekaiEntities.DONNERANDSCHLAG_PROJECTILE, world, player);
                     entity.setAgeAndPoints(30, 75);
                     entity.setVelocity(player, player.getPitch(), player.getYaw(), 0.0F, 5.0F, 1.0F);
-                    entity.setDamage(MidnightConfigConstructor.donnerandschlag_bullet_damage / 5.0F);
+                    entity.setDamage(IsekaiweaponryFabric.config().donnerandschlagProjectileDamage / 5.0F);
                     world.spawnEntity(entity);
                     stack.damage(1, player, p -> p.sendToolBreakStatus(player.getActiveHand()));
                     world.playSound(null, player.getBlockPos(), IsekaiSounds.DONNERANDSCHLAG_SHOOT, SoundCategory.PLAYERS, 1.0F, 1.0F);
-                    final int id = GeckoLibUtil.guaranteeIDForStack(stack, (ServerWorld) world);
+                    /* final int id = GeckoLibUtil.guaranteeIDForStack(stack, (ServerWorld) world);
                     GeckoLibNetwork.syncAnimation(player, this, id, ANIM_OPEN);
                     for (PlayerEntity otherPlayer : PlayerLookup.tracking(player)) {
                         GeckoLibNetwork.syncAnimation(otherPlayer, this, id, ANIM_OPEN);
-                    }
+                    } */
                 }
             } if (player.getEquippedStack(EquipmentSlot.MAINHAND).isItemEqual(stack1) && player.getEquippedStack(EquipmentSlot.OFFHAND).isItemEqual(stack2) && stacko.getDamage() < (stacko.getMaxDamage() - 1) && stack.getDamage() < (stack.getMaxDamage() - 1)) {
                 player.getItemCooldownManager().set(this, 10);
@@ -71,7 +70,7 @@ public class Schlag extends RangeWeapon {
                     DonnerandschlagProjectile entity = new DonnerandschlagProjectile(IsekaiEntities.DONNERANDSCHLAG_PROJECTILE, world, player);
                     entity.setAgeAndPoints(30, 75);
                     entity.setVelocity(player, player.getPitch(), player.getYaw(), 0.0F, 5.0F, 1.0F);
-                    entity.setDamage(MidnightConfigConstructor.donnerandschlag_bullet_damage / 2.5F);
+                    entity.setDamage(IsekaiweaponryFabric.config().donnerandschlagProjectileDamage / 2.5F);
                     world.spawnEntity(entity);
                     stack.damage(1, player, p -> p.sendToolBreakStatus(player.getActiveHand()));
                     stacko.damage(1, player, p -> p.sendToolBreakStatus(player.getActiveHand()));
@@ -116,7 +115,7 @@ public class Schlag extends RangeWeapon {
         tooltip.add(Text.translatable("desc.isekaiweaponryfabric.weapon_arifureta").formatted(Formatting.RED, Formatting.BOLD));
         tooltip.add(Text.translatable("desc.isekaiweaponryfabric.donner_and_schlag").formatted(Formatting.GOLD, Formatting.BOLD));
 
-        tooltip.add(Text.translatable("desc.isekaiweaponryfabric.rangedamage", (MidnightConfigConstructor.donnerandschlag_bullet_damage))
+        tooltip.add(Text.translatable("desc.isekaiweaponryfabric.rangedamage", (IsekaiweaponryFabric.config().donnerandschlagProjectileDamage))
                 .formatted(Formatting.BOLD).formatted(Formatting.LIGHT_PURPLE));
         tooltip.add(Text.translatable("desc.isekaiweaponryfabric.leftammo", (itemStack.getMaxDamage() - itemStack.getDamage() - 1))
                 .formatted(Formatting.BOLD).formatted(Formatting.GOLD));

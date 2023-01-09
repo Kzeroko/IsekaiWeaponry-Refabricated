@@ -7,41 +7,44 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
 
 public enum IsekaiWeaponMaterials implements ToolMaterial {
-    OVERLORD(0, 4000, 0.0F, 0.0F, 25, () -> {
+    OVERLORD(0, 4000, 0.0F, -1.0F, 25, () -> {
         return Ingredient.ofItems(Items.AIR);
         /* return Ingredient.fromTag(ItemTags.PLANKS); */
     }),
-    ASTERISK(0, 2300, 0.0F, 0.0F, 20, () -> {
+    ASTERISK(0, 2300, 0.0F, -1.0F, 20, () -> {
         return Ingredient.ofItems(Items.AIR);
     }),
-    SAO(0, 2500, 0.0F, 0.0F, 22, () -> {
+    SAO(0, 2500, 0.0F, -1.0F, 22, () -> {
         return Ingredient.ofItems(Items.AIR);
     }),
-    RWBY(0, 1900, 0.0F, 0.0F, 15, () -> {
+    RWBY(0, 1900, 0.0F, -1.0F, 15, () -> {
         return Ingredient.ofItems(Items.AIR);
     }),
-    MGRR(0, 2100, 0.0F, 0.0F, 12, () -> {
+    MGRR(0, 2100, 0.0F, -1.0F, 12, () -> {
         return Ingredient.ofItems(Items.AIR);
     }),
-    ENGAGEKISS(0, 3000, 0.0F, 0.0F, 15, () -> {
+    ENGAGEKISS(0, 3000, 0.0F, -1.0F, 15, () -> {
         return Ingredient.ofItems(Items.AIR);
     }),
-    SHADOW(0, 3500, 0.0F, 0.0F, 25, () -> {
+    SHADOW(0, 3500, 0.0F, -1.0F, 25, () -> {
         return Ingredient.ofItems(Items.AIR);
     }),
-    OJISAN(0, 2700, 0.0F, 0.0F, 18, () -> {
+    OJISAN(0, 2700, 0.0F, -1.0F, 18, () -> {
         return Ingredient.ofItems(Items.AIR);
     }),
-    XENOBLADE(0, 2000, 0.0F, 0.0F, 21, () -> {
+    XENOBLADE(0, 2000, 0.0F, -1.0F, 21, () -> {
         return Ingredient.ofItems(Items.AIR);
     }),
-    ORIGAMI(0, 1800, 0.0F, 0.0F, 21, () -> {
+    ORIGAMI(0, 1800, 0.0F, -1.0F, 21, () -> {
         return Ingredient.ofItems(Items.AIR);
     }),
-    ARIFURETA_GUN(0, 2500, 0.0F, 0.0F, 35, () -> {
+    ARIFURETA_GUN(0, 2500, 0.0F, -1.0F, 35, () -> {
         return Ingredient.ofItems(Items.AIR);
     }),
-    DAL(0, 2600, 0.0F, 0.0F, 25, () -> {
+    ARIFURETA(0, 2500, 0.0F, -1.0F, 35, () -> {
+        return Ingredient.ofItems(Items.AIR);
+    }),
+    DAL(0, 2600, 0.0F, -1.0F, 25, () -> {
         return Ingredient.ofItems(Items.AIR);
     });
 

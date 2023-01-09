@@ -1,7 +1,7 @@
 package net.kzeroko.isekaiweaponryfabric.item.weapon;
 
 import net.fabricmc.fabric.api.networking.v1.PlayerLookup;
-import net.kzeroko.isekaiweaponryfabric.config.MidnightConfigConstructor;
+import net.kzeroko.isekaiweaponryfabric.IsekaiweaponryFabric;
 import net.kzeroko.isekaiweaponryfabric.entity.CrescentroseProjectile;
 import net.kzeroko.isekaiweaponryfabric.init.IsekaiEntities;
 import net.kzeroko.isekaiweaponryfabric.init.IsekaiSounds;
@@ -39,7 +39,7 @@ public class CrescentRose extends SwordItem implements IAnimatable, ISyncable {
     public AnimationFactory factory = GeckoLibUtil.createFactory(this);
 
     public CrescentRose(ToolMaterial toolMaterial, float attackSpeed, Settings settings) {
-        super(toolMaterial, MidnightConfigConstructor.crescent_rose_damage, attackSpeed, settings);
+        super(toolMaterial, IsekaiweaponryFabric.config().crescentroseDamage, attackSpeed, settings);
         GeckoLibNetwork.registerSyncable(this);;
     }
 
@@ -70,7 +70,7 @@ public class CrescentRose extends SwordItem implements IAnimatable, ISyncable {
                     CrescentroseProjectile entity = new CrescentroseProjectile(IsekaiEntities.CRESCENTROSE_PROJECTILE, world, user);
                     entity.setAgeAndPoints(30, 75);
                     entity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 2.5F, 1.0F);
-                    entity.setDamage(MidnightConfigConstructor.crescentrose_bullet_basedamage / 2.5F);
+                    entity.setDamage(IsekaiweaponryFabric.config().crescentroseProjectileDamage / 2.5F);
                     stack.damage(1, user, p -> p.sendToolBreakStatus(user.getActiveHand()));
                     world.spawnEntity(entity);
                     world.playSound(null, user.getBlockPos(), IsekaiSounds.CRESCENTROSE_SHOOT, SoundCategory.PLAYERS, 1.0F, 1.0F);

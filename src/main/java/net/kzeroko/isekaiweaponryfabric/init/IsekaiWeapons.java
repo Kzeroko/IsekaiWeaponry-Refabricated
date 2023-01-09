@@ -9,8 +9,8 @@ import net.minecraft.util.Rarity;
 
 public class IsekaiWeapons {
     public static final ItemGroup WEAPONS;
-    public static ToolItem KANNAS_DEVILSPEAR;
-    public static ToolItem KISARAS_DEVILSWORD;
+    public static ToolItem DEMONSPEAR;
+    public static ToolItem DEMONSWORD;
     public static ToolItem PAN_DORAL;
     public static ToolItem PAN_DORAR;
     public static ToolItem SER_VERESTA;
@@ -18,7 +18,7 @@ public class IsekaiWeapons {
     public static ToolItem SHADOWOF_YGGDRASIL;
     public static ToolItem SPUIT_LANCE;
     public static ToolItem CHARONS_GUIDANCE;
-    public static ToolItem TOHKAS_SANDALPHON;
+    public static ToolItem SANDALPHON;
     public static ToolItem HF_MURAMASA;
     public static ToolItem LAMBENT_LIGHT;
     public static ToolItem PROTOTYPE_HOLYSWORD;
@@ -27,15 +27,16 @@ public class IsekaiWeapons {
     public static ToolItem ORIGAMI_SETSUGEKKA;
     public static ToolItem ORIGAMI_MOMIJI;
     public static ToolItem ORIGAMI_KATENROUGETSUAMAHISA;
+    public static ToolItem DRUCKEN;
     public String[] weapons = new String[]
-            {"kannas_devilspear", "kisaras_devilsword", "pan_doral", "pan_dorar", "ser_veresta", "razor_edge", "shadowof_yggdrasil", "spuit_lance", "charons_guidance", "tohkas_sandalphon", "hf_muramasa", "lambent_light", "prototype_holysword", "crescent_rose", "monado_ii", "origami_setsugekka", "origami_momiji", "origami_katenrougetsuamahisa"};
+            {"demonspear", "demonsword", "pan_doral", "pan_dorar", "ser_veresta", "razor_edge", "shadowof_yggdrasil", "spuit_lance", "charons_guidance", "sandalphon", "hf_muramasa", "lambent_light", "prototype_holysword", "crescent_rose", "monado_ii", "origami_setsugekka", "origami_momiji", "origami_katenrougetsuamahisa", "drucken"};
 
     public IsekaiWeapons() {
     }
 
     public static void init() {
-        IsekaiUtils.registerItem(KANNAS_DEVILSPEAR, "kannas_devilspear");
-        IsekaiUtils.registerItem(KISARAS_DEVILSWORD, "kisaras_devilsword");
+        IsekaiUtils.registerItem(DEMONSPEAR, "demonspear");
+        IsekaiUtils.registerItem(DEMONSWORD, "demonsword");
         IsekaiUtils.registerItem(PAN_DORAL, "pan_doral");
         IsekaiUtils.registerItem(PAN_DORAR, "pan_dorar");
         IsekaiUtils.registerItem(SER_VERESTA, "ser_veresta");
@@ -43,7 +44,7 @@ public class IsekaiWeapons {
         IsekaiUtils.registerItem(SHADOWOF_YGGDRASIL, "shadowof_yggdrasil");
         IsekaiUtils.registerItem(SPUIT_LANCE, "spuit_lance");
         IsekaiUtils.registerItem(CHARONS_GUIDANCE, "charons_guidance");
-        IsekaiUtils.registerItem(TOHKAS_SANDALPHON, "tohkas_sandalphon");
+        IsekaiUtils.registerItem(SANDALPHON, "sandalphon");
         IsekaiUtils.registerItem(HF_MURAMASA, "hf_muramasa");
         IsekaiUtils.registerItem(LAMBENT_LIGHT, "lambent_light");
         IsekaiUtils.registerItem(PROTOTYPE_HOLYSWORD, "prototype_holysword");
@@ -52,13 +53,14 @@ public class IsekaiWeapons {
         IsekaiUtils.registerItem(ORIGAMI_SETSUGEKKA, "origami_setsugekka");
         IsekaiUtils.registerItem(ORIGAMI_MOMIJI, "origami_momiji");
         IsekaiUtils.registerItem(ORIGAMI_KATENROUGETSUAMAHISA, "origami_katenrougetsuamahisa");
+        IsekaiUtils.registerItem(DRUCKEN, "drucken");
     }
 
     static {
         WEAPONS = IsekaiweaponryFabric.WEAPONS;
         // Engage Kiss
-        KANNAS_DEVILSPEAR = new KannasDevilspear(IsekaiWeaponMaterials.ENGAGEKISS,-2.4F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
-        KISARAS_DEVILSWORD = new KisarasDevilsword(IsekaiWeaponMaterials.ENGAGEKISS,-2.4F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        DEMONSPEAR = new DemonSpear(IsekaiWeaponMaterials.ENGAGEKISS,-2.4F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        DEMONSWORD = new DemonSword(IsekaiWeaponMaterials.ENGAGEKISS,-2.4F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         // Gakusen Toshi Asterisk
         PAN_DORAL = new PanDoraL(IsekaiWeaponMaterials.ASTERISK, -2.5F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         PAN_DORAR = new PanDoraR(IsekaiWeaponMaterials.ASTERISK,-2.5F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
@@ -69,7 +71,7 @@ public class IsekaiWeapons {
         SPUIT_LANCE = new SpuitLance(IsekaiWeaponMaterials.OVERLORD,-2.4F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         CHARONS_GUIDANCE = new CharonsGuidance(IsekaiWeaponMaterials.OVERLORD,-2.5F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         // Date A Live
-        TOHKAS_SANDALPHON = new TohkasSandalphon(IsekaiWeaponMaterials.DAL,-2.6F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        SANDALPHON = new Sandalphon(IsekaiWeaponMaterials.DAL,-2.6F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         // Metal Gear RR
         HF_MURAMASA = new HfMuramasa(IsekaiWeaponMaterials.MGRR,-2.1F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         // Sword Art Online
@@ -84,6 +86,8 @@ public class IsekaiWeapons {
         ORIGAMI_SETSUGEKKA = new OrigamiSetsugekka(IsekaiWeaponMaterials.ORIGAMI,-2.3F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         ORIGAMI_MOMIJI = new OrigamiMomiji(IsekaiWeaponMaterials.ORIGAMI,-2.1F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
         ORIGAMI_KATENROUGETSUAMAHISA = new OrigamiKatenRougetsuAmahisa(IsekaiWeaponMaterials.ORIGAMI,-2.2F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
+        // ARIFURETA
+        DRUCKEN = new Drucken(IsekaiWeaponMaterials.ARIFURETA,-2.8F, (new Item.Settings()).group(WEAPONS).rarity(Rarity.EPIC).fireproof());
     }
 }
 

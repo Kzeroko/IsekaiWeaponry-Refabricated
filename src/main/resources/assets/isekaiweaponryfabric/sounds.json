@@ -9,6 +9,11 @@
       "isekaiweaponryfabric:cast_buff"
     ]
   },
+  "cast_dark": {
+    "sounds": [
+      "isekaiweaponryfabric:cast_dark"
+    ]
+  },
   "cast_nightmare": {
     "sounds": [
       "isekaiweaponryfabric:cast_nightmare"

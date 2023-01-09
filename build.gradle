@@ -14,8 +14,8 @@ repositories {
 	mavenLocal()
 	maven { url = "https://www.cursemaven.com" }
 	// maven { url = "https://maven.wispforest.io/" }
-	// maven { url "https://maven.shedaniel.me" }
-	// maven { url "https://maven.terraformersmc.com" }
+	maven { url "https://maven.shedaniel.me" }
+	maven { url "https://maven.terraformersmc.com" }
 	maven { url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/" }
 
 	flatDir {
@@ -31,23 +31,24 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	// Gecko
+	// GeckoLib
 	modImplementation "software.bernie.geckolib:geckolib-fabric-1.19:3.1.38"
 
-	// OwO
+	// OwO Lib
 	// annotationProcessor modImplementation("io.wispforest:owo-lib:${project.owo_version}")
 	// include "io.wispforest:owo-sentinel:${project.owo_version}"
 
-	// REI + Arch
+	// REI
 	// modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:${project.rei_version}"
 	// modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}"
 
-	// ModMenu
-	// modApi("com.terraformersmc:modmenu:$rootProject.modmenu_version")
-
-	//modApi(include("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}")) {
-	//	exclude(group: "net.fabricmc.fabric-api")
-	//}
+	// Cloth Config
+	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}") {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+	modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}") {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
 }
 
 sourceSets {

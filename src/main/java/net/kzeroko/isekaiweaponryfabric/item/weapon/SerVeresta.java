@@ -1,6 +1,6 @@
 package net.kzeroko.isekaiweaponryfabric.item.weapon;
 
-import net.kzeroko.isekaiweaponryfabric.config.MidnightConfigConstructor;
+import net.kzeroko.isekaiweaponryfabric.IsekaiweaponryFabric;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemStack;
@@ -14,7 +14,7 @@ import java.util.List;
 
 public class SerVeresta extends SwordItem {
     public SerVeresta(ToolMaterial toolMaterial, float attackSpeed, Settings settings) {
-        super(toolMaterial, MidnightConfigConstructor.ser_veresta_damage, attackSpeed, settings);
+        super(toolMaterial, IsekaiweaponryFabric.config().serverestaDamage, attackSpeed, settings);
     }
 
     @Override

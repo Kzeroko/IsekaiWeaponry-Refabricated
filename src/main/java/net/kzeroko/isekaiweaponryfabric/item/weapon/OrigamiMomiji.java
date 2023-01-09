@@ -1,6 +1,6 @@
 package net.kzeroko.isekaiweaponryfabric.item.weapon;
 
-import net.kzeroko.isekaiweaponryfabric.config.MidnightConfigConstructor;
+import net.kzeroko.isekaiweaponryfabric.IsekaiweaponryFabric;
 import net.kzeroko.isekaiweaponryfabric.init.IsekaiEffects;
 import net.kzeroko.isekaiweaponryfabric.init.IsekaiSounds;
 import net.minecraft.client.gui.screen.Screen;
@@ -21,7 +21,7 @@ import java.util.List;
 
 public class OrigamiMomiji extends SwordItem {
     public OrigamiMomiji(ToolMaterial toolMaterial, float attackSpeed, Settings settings) {
-        super(toolMaterial, MidnightConfigConstructor.origami_momiji_damage, attackSpeed, settings);
+        super(toolMaterial, IsekaiweaponryFabric.config().origamimomijiDamage, attackSpeed, settings);
     }
 
     @Override

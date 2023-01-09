@@ -2,12 +2,12 @@
 	"credit": "This model is created by @Kzeroko",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "isekaiweaponryfabric:item/weapons/tohkas_sandalphon1",
-		"1": "isekaiweaponryfabric:item/weapons/tohkas_sandalphon2",
-		"2": "isekaiweaponryfabric:item/weapons/tohkas_sandalphon3",
-		"3": "isekaiweaponryfabric:item/weapons/tohkas_sandalphon4",
-		"4": "isekaiweaponryfabric:item/weapons/tohkas_sandalphon5",
-		"particle": "isekaiweaponryfabric:item/weapons/tohkas_sandalphon1"
+		"0": "isekaiweaponryfabric:item/weapons/sandalphon1",
+		"1": "isekaiweaponryfabric:item/weapons/sandalphon2",
+		"2": "isekaiweaponryfabric:item/weapons/sandalphon3",
+		"3": "isekaiweaponryfabric:item/weapons/sandalphon4",
+		"4": "isekaiweaponryfabric:item/weapons/sandalphon5",
+		"particle": "isekaiweaponryfabric:item/weapons/sandalphon1"
 	},
 	"elements": [
 		{

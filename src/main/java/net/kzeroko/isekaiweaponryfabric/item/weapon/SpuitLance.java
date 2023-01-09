@@ -1,6 +1,6 @@
 package net.kzeroko.isekaiweaponryfabric.item.weapon;
 
-import net.kzeroko.isekaiweaponryfabric.config.MidnightConfigConstructor;
+import net.kzeroko.isekaiweaponryfabric.IsekaiweaponryFabric;
 import net.kzeroko.isekaiweaponryfabric.init.IsekaiSounds;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
@@ -21,10 +21,8 @@ import java.util.List;
 
 public class SpuitLance extends SwordItem {
     public SpuitLance(ToolMaterial toolMaterial, float attackSpeed, Settings settings) {
-        super(toolMaterial, MidnightConfigConstructor.spuit_lance_damage, attackSpeed, settings);
+        super(toolMaterial, IsekaiweaponryFabric.config().spuitlanceDamage, attackSpeed, settings);
     }
-
-    public static float WeaponDamage = MidnightConfigConstructor.spuit_lance_damage;
 
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         ServerWorld world = (ServerWorld) attacker.world;
@@ -32,10 +30,10 @@ public class SpuitLance extends SwordItem {
             if (!player.getItemCooldownManager().isCoolingDown(this)) {
                 player.getItemCooldownManager().set(this, 20 * 5);
                 world.playSoundFromEntity(null, target, IsekaiSounds.CAST_REPLENISH, SoundCategory.PLAYERS, 1.0f, 1.0F);
-                player.heal(WeaponDamage / MidnightConfigConstructor.spuit_lance_heal_portion);
+                player.heal((float) IsekaiweaponryFabric.config().spuitlanceDamage / (100 / IsekaiweaponryFabric.config().spuitlanceHealPortion));
             }
             if (target.getGroup() == EntityGroup.UNDEAD) {
-                target.damage(DamageSource.GENERIC, MidnightConfigConstructor.spuit_lance_damage + MidnightConfigConstructor.spuit_lance_extradamage);
+                target.damage(DamageSource.GENERIC, (float) IsekaiweaponryFabric.config().spuitlanceDamage + IsekaiweaponryFabric.config().spuitlanceExtraDamage);
             }
         }
         return super.postHit(stack, target, attacker);

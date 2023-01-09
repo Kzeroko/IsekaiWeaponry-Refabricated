@@ -2,10 +2,7 @@ package net.kzeroko.isekaiweaponryfabric;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.kzeroko.isekaiweaponryfabric.client.renderer.CrescentroseProjectileRenderer;
-import net.kzeroko.isekaiweaponryfabric.client.renderer.CrescentroseRenderer;
-import net.kzeroko.isekaiweaponryfabric.client.renderer.DonnerandschlagProjectileRenderer;
-import net.kzeroko.isekaiweaponryfabric.client.renderer.ProstheticArmcoatRenderer;
+import net.kzeroko.isekaiweaponryfabric.client.renderer.*;
 import net.kzeroko.isekaiweaponryfabric.init.IsekaiArmors;
 import net.kzeroko.isekaiweaponryfabric.init.IsekaiEntities;
 import net.kzeroko.isekaiweaponryfabric.init.IsekaiWeapons;
@@ -25,9 +22,13 @@ public class IsekaiweaponryClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        GeoItemRenderer.registerItemRenderer(IsekaiWeapons.CRESCENT_ROSE, new CrescentroseRenderer());
+        // Projectile renderer
         EntityRendererRegistry.register(IsekaiEntities.CRESCENTROSE_PROJECTILE, CrescentroseProjectileRenderer::new);
         EntityRendererRegistry.register(IsekaiEntities.DONNERANDSCHLAG_PROJECTILE, DonnerandschlagProjectileRenderer::new);
+        // Item Renderer
+        GeoItemRenderer.registerItemRenderer(IsekaiWeapons.CRESCENT_ROSE, new CrescentroseRenderer());
+        // Armor Renderer
         GeoArmorRenderer.registerArmorRenderer(new ProstheticArmcoatRenderer(), IsekaiArmors.PROSTHETIC_ARMCOAT);
+        GeoArmorRenderer.registerArmorRenderer(new KisarasDemonsetRenderer(), IsekaiArmors.KISARASDEMONSET_HEAD, IsekaiArmors.KISARASDEMONSET_CHEST);
     }
 }

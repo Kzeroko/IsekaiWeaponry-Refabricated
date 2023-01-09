@@ -8,6 +8,7 @@ public class IsekaiSounds {
     // Special ID
     public static final Identifier CAST_ACTIVATE_REG = registerId("cast_activate");
     public static final Identifier CAST_BUFF_REG = registerId("cast_buff");
+    public static final Identifier CAST_DARK_REG = registerId("cast_dark");
     public static final Identifier CAST_NIGHTMARE_REG = registerId("cast_nightmare");
     public static final Identifier CAST_REPLENISH_REG = registerId("cast_replenish");
     public static final Identifier CRESCENTROSE_SHOOT_REG = registerId("crescentrose_shoot");
@@ -55,6 +56,7 @@ public class IsekaiSounds {
     // Special Event
     public static SoundEvent CAST_ACTIVATE;
     public static SoundEvent CAST_BUFF;
+    public static SoundEvent CAST_DARK;
     public static SoundEvent CAST_NIGHTMARE;
     public static SoundEvent CAST_REPLENISH;
     public static SoundEvent CRESCENTROSE_SHOOT;
@@ -105,6 +107,7 @@ public class IsekaiSounds {
     public static void init() {
         IsekaiUtils.registerSound(CAST_ACTIVATE_REG, CAST_ACTIVATE);
         IsekaiUtils.registerSound(CAST_BUFF_REG, CAST_BUFF);
+        IsekaiUtils.registerSound(CAST_DARK_REG, CAST_DARK);
         IsekaiUtils.registerSound(CAST_NIGHTMARE_REG, CAST_NIGHTMARE);
         IsekaiUtils.registerSound(CAST_REPLENISH_REG, CAST_REPLENISH);
         IsekaiUtils.registerSound(CRESCENTROSE_SHOOT_REG, CRESCENTROSE_SHOOT);
@@ -157,6 +160,7 @@ public class IsekaiSounds {
     static {
         CAST_ACTIVATE = new SoundEvent(CAST_ACTIVATE_REG);
         CAST_BUFF = new SoundEvent(CAST_BUFF_REG);
+        CAST_DARK = new SoundEvent(CAST_DARK_REG);
         CAST_NIGHTMARE = new SoundEvent(CAST_NIGHTMARE_REG);
         CAST_REPLENISH = new SoundEvent(CAST_REPLENISH_REG);
         CRESCENTROSE_SHOOT = new SoundEvent(CRESCENTROSE_SHOOT_REG);

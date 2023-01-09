@@ -1,6 +1,6 @@
 package net.kzeroko.isekaiweaponryfabric.item.weapon;
 
-import net.kzeroko.isekaiweaponryfabric.config.MidnightConfigConstructor;
+import net.kzeroko.isekaiweaponryfabric.IsekaiweaponryFabric;
 import net.kzeroko.isekaiweaponryfabric.init.IsekaiSounds;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
@@ -19,16 +19,16 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class KannasDevilspear extends SwordItem {
-    public KannasDevilspear(ToolMaterial toolMaterial, float attackSpeed, Settings settings) {
-        super(toolMaterial, MidnightConfigConstructor.kannas_devilspear_damage, attackSpeed, settings);
+public class DemonSpear extends SwordItem {
+    public DemonSpear(ToolMaterial toolMaterial, float attackSpeed, Settings settings) {
+        super(toolMaterial, IsekaiweaponryFabric.config().demonspearDamage, attackSpeed, settings);
     }
 
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         ServerWorld world = (ServerWorld) attacker.world;
         if (attacker instanceof ServerPlayerEntity && target.getGroup() == EntityGroup.UNDEAD) {
-            target.damage(DamageSource.MAGIC, MidnightConfigConstructor.kisaras_devilsword_damage + MidnightConfigConstructor.kannas_devilspear_extradamage);
-            world.playSoundFromEntity(null, target, IsekaiSounds.CAST_ACTIVATE, SoundCategory.PLAYERS, 1.0f, 1.0F);
+            target.damage(DamageSource.MAGIC, (float) IsekaiweaponryFabric.config().demonspearDamage + IsekaiweaponryFabric.config().demonspearExtraDamage);
+            world.playSoundFromEntity(null, target, IsekaiSounds.CAST_ACTIVATE, SoundCategory.PLAYERS, 0.7F, 1.0F);
         }
         return super.postHit(stack, target, attacker);
     }
@@ -43,10 +43,10 @@ public class KannasDevilspear extends SwordItem {
 
         // tooltip.add(Text.literal(""));
         tooltip.add(Text.translatable("desc.isekaiweaponryfabric.weapon_engagekiss").formatted(Formatting.LIGHT_PURPLE, Formatting.BOLD));
-        tooltip.add(Text.translatable("desc.isekaiweaponryfabric.kannas_devilspear").formatted(Formatting.GOLD, Formatting.BOLD));
+        tooltip.add(Text.translatable("desc.isekaiweaponryfabric.demonspear").formatted(Formatting.GOLD, Formatting.BOLD));
 
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("desc.isekaiweaponryfabric.kannas_devilspear_story").formatted(Formatting.ITALIC));
+            tooltip.add(Text.translatable("desc.isekaiweaponryfabric.demonspear_story").formatted(Formatting.ITALIC));
         } else {
             tooltip.add(Text.translatable("desc.isekaiweaponryfabric.shift").formatted(Formatting.BOLD));
         }

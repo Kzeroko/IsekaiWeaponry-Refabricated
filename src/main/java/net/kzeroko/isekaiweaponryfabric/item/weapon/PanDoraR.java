@@ -1,6 +1,6 @@
 package net.kzeroko.isekaiweaponryfabric.item.weapon;
 
-import net.kzeroko.isekaiweaponryfabric.config.MidnightConfigConstructor;
+import net.kzeroko.isekaiweaponryfabric.IsekaiweaponryFabric;
 import net.kzeroko.isekaiweaponryfabric.init.IsekaiEffects;
 import net.kzeroko.isekaiweaponryfabric.init.IsekaiSounds;
 import net.kzeroko.isekaiweaponryfabric.init.IsekaiWeapons;
@@ -27,7 +27,7 @@ import java.util.List;
 
 public class PanDoraR extends SwordItem {
     public PanDoraR(ToolMaterial toolMaterial, float attackSpeed, Settings settings) {
-        super(toolMaterial, MidnightConfigConstructor.pan_dorar_damage, attackSpeed, settings);
+        super(toolMaterial, IsekaiweaponryFabric.config().pandorarDamage, attackSpeed, settings);
     }
 
     @Override

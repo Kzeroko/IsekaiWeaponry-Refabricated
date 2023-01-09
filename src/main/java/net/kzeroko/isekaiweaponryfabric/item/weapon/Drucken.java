@@ -1,6 +1,6 @@
 package net.kzeroko.isekaiweaponryfabric.item.weapon;
 
-import net.kzeroko.isekaiweaponryfabric.config.MidnightConfigConstructor;
+import net.kzeroko.isekaiweaponryfabric.IsekaiweaponryFabric;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemStack;
@@ -12,9 +12,9 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class TohkasSandalphon extends SwordItem {
-    public TohkasSandalphon(ToolMaterial toolMaterial, float attackSpeed, Settings settings) {
-        super(toolMaterial, MidnightConfigConstructor.tohkas_sandalphon_damage, attackSpeed, settings);
+public class Drucken extends SwordItem {
+    public Drucken(ToolMaterial toolMaterial, float attackSpeed, Settings settings) {
+        super(toolMaterial, IsekaiweaponryFabric.config().druckenDamage, attackSpeed, settings);
     }
 
     @Override
@@ -26,11 +26,11 @@ public class TohkasSandalphon extends SwordItem {
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
 
         // tooltip.add(Text.literal(""));
-        tooltip.add(Text.translatable("desc.isekaiweaponryfabric.weapon_dal").formatted(Formatting.DARK_PURPLE, Formatting.BOLD));
-        tooltip.add(Text.translatable("desc.isekaiweaponryfabric.tohkas_sandalphon").formatted(Formatting.GOLD, Formatting.BOLD));
+        tooltip.add(Text.translatable("desc.isekaiweaponryfabric.weapon_arifureta").formatted(Formatting.RED, Formatting.BOLD));
+        tooltip.add(Text.translatable("desc.isekaiweaponryfabric.drucken").formatted(Formatting.GOLD, Formatting.BOLD));
 
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("desc.isekaiweaponryfabric.tohkas_sandalphon_story").formatted(Formatting.ITALIC));
+            tooltip.add(Text.translatable("desc.isekaiweaponryfabric.drucken_story").formatted(Formatting.ITALIC));
         } else {
             tooltip.add(Text.translatable("desc.isekaiweaponryfabric.shift").formatted(Formatting.BOLD));
         }

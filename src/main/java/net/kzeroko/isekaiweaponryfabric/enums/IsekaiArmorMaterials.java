@@ -1,6 +1,8 @@
 package net.kzeroko.isekaiweaponryfabric.enums;
 
 import java.util.function.Supplier;
+
+import net.kzeroko.isekaiweaponryfabric.init.IsekaiSounds;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Items;
@@ -10,7 +12,10 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Lazy;
 
 public enum IsekaiArmorMaterials implements ArmorMaterial {
-    PROSTHETIC_ARMCOAT("prosthetic_armcoat", 75, new int[]{5, 22, 12, 6}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 12.0F, 0.5F, () -> {
+    PROSTHETIC_ARMCOAT("prosthetic_armcoat", 150, new int[]{6, 12, 24, 6}, 30, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 15.0F, 0.5F, () -> {
+        return Ingredient.ofItems(Items.AIR);
+    }),
+    KISARASDEMONSET("kisarasdemonset", 120, new int[]{4, 12, 18, 5}, 10, IsekaiSounds.CAST_DARK, 10.0F, 0.2F, () -> {
         return Ingredient.ofItems(Items.AIR);
     }),
     NETHERITE1("netherite", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {

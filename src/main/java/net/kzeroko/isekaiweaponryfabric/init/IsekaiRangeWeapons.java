@@ -22,8 +22,8 @@ public class IsekaiRangeWeapons {
 
     static {
         RANGEWEAPONS = IsekaiweaponryFabric.RANGEWEAPONS;
-        DONNER = new Donner(new Item.Settings().maxCount(1).maxDamage(7).group(IsekaiweaponryFabric.RANGEWEAPONS).rarity(Rarity.EPIC).fireproof());
-        SCHLAG = new Schlag(new Item.Settings().maxCount(1).maxDamage(7).group(IsekaiweaponryFabric.RANGEWEAPONS).rarity(Rarity.EPIC).fireproof());
+        DONNER = new Donner(-1,-2.4F, new Item.Settings().maxCount(1).maxDamage(7).group(IsekaiweaponryFabric.RANGEWEAPONS).rarity(Rarity.EPIC).fireproof());
+        SCHLAG = new Schlag(-1,-2.4F, new Item.Settings().maxCount(1).maxDamage(7).group(IsekaiweaponryFabric.RANGEWEAPONS).rarity(Rarity.EPIC).fireproof());
     }
 }
 

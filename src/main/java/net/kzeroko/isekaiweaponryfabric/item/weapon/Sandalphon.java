@@ -12,9 +12,9 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class LambentLight extends SwordItem {
-    public LambentLight(ToolMaterial toolMaterial, float attackSpeed, Settings settings) {
-        super(toolMaterial, IsekaiweaponryFabric.config().lambentlightDamage, attackSpeed, settings);
+public class Sandalphon extends SwordItem {
+    public Sandalphon(ToolMaterial toolMaterial, float attackSpeed, Settings settings) {
+        super(toolMaterial, IsekaiweaponryFabric.config().sandalphonDamage, attackSpeed, settings);
     }
 
     @Override
@@ -26,11 +26,11 @@ public class LambentLight extends SwordItem {
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
 
         // tooltip.add(Text.literal(""));
-        tooltip.add(Text.translatable("desc.isekaiweaponryfabric.weapon_sao").formatted(Formatting.BLUE, Formatting.BOLD));
-        tooltip.add(Text.translatable("desc.isekaiweaponryfabric.lambent_light").formatted(Formatting.GOLD, Formatting.BOLD));
+        tooltip.add(Text.translatable("desc.isekaiweaponryfabric.weapon_dal").formatted(Formatting.DARK_PURPLE, Formatting.BOLD));
+        tooltip.add(Text.translatable("desc.isekaiweaponryfabric.sandalphon").formatted(Formatting.GOLD, Formatting.BOLD));
 
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("desc.isekaiweaponryfabric.lambent_light_story").formatted(Formatting.ITALIC));
+            tooltip.add(Text.translatable("desc.isekaiweaponryfabric.sandalphon_story").formatted(Formatting.ITALIC));
         } else {
             tooltip.add(Text.translatable("desc.isekaiweaponryfabric.shift").formatted(Formatting.BOLD));
         }

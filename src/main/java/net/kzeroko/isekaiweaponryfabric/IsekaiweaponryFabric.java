@@ -1,9 +1,10 @@
 package net.kzeroko.isekaiweaponryfabric;
 
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.kzeroko.isekaiweaponryfabric.config.MidnightConfig;
-import net.kzeroko.isekaiweaponryfabric.config.MidnightConfigConstructor;
+import net.kzeroko.isekaiweaponryfabric.config.IsekaiConfig;
 import net.kzeroko.isekaiweaponryfabric.init.*;
 import net.kzeroko.isekaiweaponryfabric.network.PacketReg;
 import net.minecraft.item.ItemGroup;
@@ -24,7 +25,7 @@ public class IsekaiweaponryFabric implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("IsekaiWeaponry is initializing!");
-		MidnightConfig.init(IsekaiweaponryFabric.MOD_ID, MidnightConfigConstructor.class);
+		AutoConfig.register(IsekaiConfig.class, GsonConfigSerializer::new);
 		IsekaiWeapons.init();
 		IsekaiRangeWeapons.init();
 		IsekaiMiscItems.init();
@@ -34,6 +35,11 @@ public class IsekaiweaponryFabric implements ModInitializer {
 		ENTITIES = new IsekaiEntities();
 		GeckoLib.initialize();
 		PacketReg.registerMessages();
+	}
+
+	// Config
+	public static IsekaiConfig config() {
+		return AutoConfig.getConfigHolder(IsekaiConfig.class).get();
 	}
 
 	// Groups
